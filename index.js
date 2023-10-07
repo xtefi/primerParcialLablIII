@@ -371,42 +371,42 @@ function limpiarDialog(){
 // c)Al hacer Click en el botón “Calcular”, debe mostrarse la edad promedio de los elementos filtrados. Utilizar
 // Map/Reduce/Filter
 
-let btnPromedio = document.getElementById("btnPromedio");
-btnPromedio.addEventListener("click", ()=>{
-    var selected = lista.value;
-    var velMax=0;
-    var contador=0;
-    var promedio;
-    var rows=tabla.getElementsByTagName("tr");
-    switch(selected){
-        case "todos":
-            for(var i=1; i<rows.length; i++){
-                //console.log(row.cells[3].textContent.trim());
-                //velMax+=row.cells[3].textContent.trim();
-            }
-            break;
-        case "aereos":
-            // for(var i=1; i<rows.length; i++){                
-            //     var row= rows[i];
-            //     var dato=row.cells[4].textContent.trim();
-            //     if(dato >= 0) {
-            //         velMax+=row.cells[3].textContent.trim();
-            //         contador++;
-            //     }
-            //}
-            break;
-        case "terrestres":
-            for(var i=1; i<rows.length; i++){
-                var row= rows[i];
-                var dato=row.cells[6].textContent.trim();
-                dato >= 0 ? row.style.display= "" : row.style.display="none"; // esconde la row
-            }
-            break;
-    }
-    promedio=20;
-    console.log(20);
-    document.getElementById("lblPromedio").value="promedio.toString()";
-})
+// let btnPromedio = document.getElementById("btnPromedio");
+// btnPromedio.addEventListener("click", ()=>{
+//     var selected = lista.value;
+//     var velMax=0;
+//     var contador=0;
+//     var promedio;
+//     var rows=tabla.getElementsByTagName("tr");
+//     switch(selected){
+//         case "todos":
+//             for(var i=1; i<rows.length; i++){
+//                 //console.log(row.cells[3].textContent.trim());
+//                 //velMax+=row.cells[3].textContent.trim();
+//             }
+//             break;
+//         case "aereos":
+//             // for(var i=1; i<rows.length; i++){                
+//             //     var row= rows[i];
+//             //     var dato=row.cells[4].textContent.trim();
+//             //     if(dato >= 0) {
+//             //         velMax+=row.cells[3].textContent.trim();
+//             //         contador++;
+//             //     }
+//             //}
+//             break;
+//         case "terrestres":
+//             for(var i=1; i<rows.length; i++){
+//                 var row= rows[i];
+//                 var dato=row.cells[6].textContent.trim();
+//                 dato >= 0 ? row.style.display= "" : row.style.display="none"; // esconde la row
+//             }
+//             break;
+//     }
+//     promedio=20;
+//     console.log(20);
+//     document.getElementById("lblPromedio").value="promedio.toString()";
+// })
 
 // e)Al hacer click en alguno de los botones del “Formulario ABM” debe realizarse la operación que corresponda, ocultar el
 // formulario y mostrar el Formulario “Form Datos” con los datos actualizados. En caso de ser un Alta, generar ID único.
